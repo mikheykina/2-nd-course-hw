@@ -34,7 +34,18 @@ alert(n);
 }
 
 //Задание 6
-const firstFriday = 5;
-for (let day = firstFriday; day &lt;= 31; day += 7) {
-    console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
-}
+function printReportReminders() {
+    const daysOfWeek = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
+    const firstFriday = 5; 
+    const monthDays = 31; 
+  
+    for (let i = firstFriday; i <= monthDays; i += 7) {
+      const date = new Date();
+      date.setDate(i);
+      const dayOfWeek = daysOfWeek[date.getDay()];
+      console.log("Сегодня пятница, ${i}-е число. Необходимо подготовить отчет.");
+    }
+  }
+  
+  printReportReminders();
+  
