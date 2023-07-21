@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+  
+a {
+    text-decoration: none;
+  }
+  
+.heading {
+    height: 1024px;
+    background-image: url(image/Rectangle\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 700;
+    padding-top: 217px;
+    margin-left: 120px;
+    margin-right: 531px;
+}
+
+.top_text {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+    margin-left: 120px;
+    margin-right: 838px;
+    padding-top: 32px;
+}
+
+.button {
+    border-radius: 30px;
+    background: #9C0332;
+    width: 234.063px;
+    height: 48.603px;
+    margin-left: 120px;
+    color: #FFF;
+    font-size: 18px;
+    margin-top: 44px;
+}
+
+.button:hover {
+    color: #9C0332;
+    background-color: #FFF;
+  }
+
+.game {
+    height: 556px;
+    background-image: url(image/Rectangle\ 5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icons {
+    padding-top: 128px;
+    padding-left: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.icon {
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.icon:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 375px) {
+.title {
+margin-left: 16px;
+margin-right: 16px;
+text-align: center;
+font-size: 32px;
+}
+
+.heading {
+background-image: url(image/bgmob.jpg);
+height: 735px;
+}
+
+.top_text {
+font-size: 14px;
+font-weight: 300;
+line-height: 22px;
+display: flex;
+text-align: center;
+margin-right: 16px;
+margin-left: 16px;
+}
+
+.button {
+margin-left: 70px;
+margin-right: 70px;
+}
+
+.game {
+    background-image: url(image/bg2mob.jpg);
+    height: 1221px;
+}
+
+.icons {
+display: flex;
+flex-direction: column;
+padding-right: 16px;
+padding-left: 16px;
+}
+
+.icon {
+width: 343px;
+}
+}
+
