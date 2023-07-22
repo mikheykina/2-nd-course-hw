@@ -1,11 +1,12 @@
 //ДЗ №3
 //Задание 1
 let password = 'пароль';
-let action = prompt("Введите пароль");
-if (action = true) {
-    alert('Пароль введен верно')
+let userPassword = prompt('Введите пароль');
+
+if (userPassword === password) {
+  console.log("Пароль введен верно");
 } else {
-    alert('Пароль введен неправильно')
+  console.log("Пароль введен неправильно");
 }
 
 //Задание 2
@@ -28,48 +29,31 @@ if (d > 100 || e > 100) {
 //Задание 4
 let a = '2';
 let b = '3';
-alertNumber(a + b);
+alert(Number(a) + Number(b));
 
 //Задание 5
-let monthNumber = String(prompt('Введите число, чтобы узнать месяц'));
+let monthNumber = Number(prompt('Введите число, чтобы узнать месяц'));
 switch (monthNumber) {
     case 1:
-        alert('Зима')
-        break;
-    case 2:
+    case 2: 
+    case 12:
         alert('Зима')
         break;
     case 3:
-        alert('Весна')
-        break;
     case 4:
-        alert('Весна')
-        break;
     case 5:
         alert('Весна')
         break;
     case 6:
-        alert('Лето')
-        break;
     case 7:
-        alert('Лето')
-        break;
     case 8:
         alert('Лето')
         break;
     case 9:
-        alert('Осень')
-        break;
     case 10:
-        alert('Осень')
-        break;
     case 11:
         alert('Осень')
         break;
-    case 12:
-        alert('Зима')
-        break;
-    
     default:
         monthNumber >= 13
         break;
