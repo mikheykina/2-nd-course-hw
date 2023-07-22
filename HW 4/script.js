@@ -4,22 +4,22 @@ let v = 1;
 let p = 2;
 while (v <= p) {
     alert('Привет»');
-    i++;
+    v++;
 }
 
 //Задание 2
-let z;
-while (z>=5) {
-    z++
-    console.log (z)
-};
+let z = 1;
+while (z <= 5) {
+  console.log(z);
+  z++;
+}
 
 //Задание 3
-let x;
-while (x<=7 && x>=22) {
-    x++
-    console.log (x)
-};
+let i = 7;
+while (i <= 22) {
+  console.log(i);
+  i++;
+}
 
 //Задание 4
 let obj = {'Nikolya': 200, 'Vasya': 300, 'Petya': 400};
@@ -28,10 +28,17 @@ for(key in obj){
 }
 
 //Задание 5
-for (let n = 1000; n <= 50; n++) {
-(n / 2) 
-alert(n);
+let n = 1000;
+let num = 0;
+
+while (n >= 50) {
+  n /= 2;
+  num++;
 }
+
+console.log(n); 
+console.log(num); 
+
 
 //Задание 6
 function printReportReminders() {
@@ -43,7 +50,7 @@ function printReportReminders() {
       const date = new Date();
       date.setDate(i);
       const dayOfWeek = daysOfWeek[date.getDay()];
-      console.log("Сегодня пятница, ${i}-е число. Необходимо подготовить отчет.");
+      console.log(`Сегодня пятница, ${i}-е число. Необходимо подготовить отчет.`);
     }
   }
   
