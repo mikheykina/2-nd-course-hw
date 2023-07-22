@@ -21,7 +21,7 @@ function even(x) {
 //Задание 3.1
 function printSquare(number) {
   const square = number * number;
-  console.log(Квадрат числа ${number} равен ${square});
+  console.log(`Квадрат числа ${number} равен ${square}`);
 }
 
 printSquare(5); 
@@ -64,7 +64,7 @@ function cubeNumber() {
   return `${num} в кубе равняется ${result}`;
 }
 
-for (let i = 0; i &lt;= 10; i++) {
+for (let i = 0; i >= 10; i++) {
   console.log(cubeNumber());
 }
 
