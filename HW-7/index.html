@@ -1,11 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
-    
+  <section class="header">
+    <div class="heading">
+      <h1 class="title">Добро пожаловать 
+        на мой сайт !</h1>
+      <p class="top_text">Вам предстоит пройти несколько увлекательных 
+        игр. Если готов нажимай <span class="span">поехали</span> и <span class="span">приступай</span></p>
+      <button class="button">Поехали!</button>
+    </div>
+  </section> 
+
+  <section class="game">
+    <div class="icons">
+        <a class="icon" href="seasons"></a>
+          <img class="img" src="image/game1.jpg" alt="game1"> 
+          <p class="img__text">Игра 1</p>
+        <a class="icon" href="words"></a>
+          <img class="img" src="image/game2.jpg" alt="game2">
+          <p class="img__text">Игра 2</p>
+        <a class="icon" href="puzzles"></a>
+          <img class="img" src="image/game3.jpg" alt="game3">
+          <p class="img__text">Игра 3</p>
+    </div>
+  </section>
+
+  <section class="seasons">
+    <div class="seasons_text">
+      <h2 class="title_game">Времена года!</h2>
+      <p class="text_game">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+      <button id="myButton1" class="button_game">Играть!</button>
+            </div>
+            <img class="img_game" src="image/seasons.svg" alt="seasons">
+  </section>
+        <section class="words">
+            <img class="words__img" src="image/words.svg" alt="p2">
+            <div class="words__text">
+              <h3 class="title_game">Запомни слова</h3>
+              <p class="text_game">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+              <button id="myButton2" class="button_game">Играть!</button>
+          </div>
+  </section> 
+  <section class="puzzles">
+    <h4 class="title_game">Игра в загадки</h4>
+    <p class="text_game">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+    <button class="button_game">Играть!</button>
+  </section>
+    <script>
+        document.querySelector('#myButton1').onclick = function() {
+            let num = 
+Number(prompt("Введите число"));
+
+function getSeason(month) {
+    if (num === 12 || num === 1 || num === 2) {
+      return "Зима";
+    } else if (num >= 3 && num <= 5) {
+      return "Весна";
+    } else if (num >= 6 && num <= 8) {
+      return "Лето";
+    } else if (num >= 9 && num <= 11) {
+      return "Осень";
+    } else {
+      return "Неверный номер месяца";
+    }
+  }
+Number(alert(getSeason(num)));
+};
+
+document.querySelector('#myButton2').onclick = function() {
+  let words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+
+words = words.sort(() => Math.random() - 0.5);
+alert(words);
+
+let firstElement = prompt('Чему равнялся первый элемент массива?');
+let lastElement = prompt('Чему равнялся последний элемент массива?');
+
+if (firstElement === words[0] && lastElement === words[words.length - 1]) {
+  alert('Поздравляю, вы угадали оба элемента!');
+} else if (firstElement === words[0] || lastElement === words[words.length - 1]) {
+  alert('Вы были близки к победе!');
+} else {
+  alert('Вы ответили неверно.');
+}
+}
+    </script>
 </body>
 </html>
