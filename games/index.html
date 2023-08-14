@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top center">
+        <div class="top__content">
+            <h1 class="top__content__title">Добро пожаловать<br>на мой сайт !</h1>
+            <p class="top__content__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <b>поехали</b> и <b>приступай</b></p>
+            <button class="top__content__button" type="button">Поехали!</button>    
+        </div>
+    </header>
+    <section class="section_one center">
+        <div class="game">
+            <a class="game__item game__item_1" href="#">
+                <span class="game__item_1_1" >Игра 1</span>
+            </a>
+            <a class="game__item game__item_2" href="#">
+                <span class="game__item_2_2">Игра 2</span>
+            </a>
+            <a class="game__item game__item_3" href="#">
+                <span class="game__item_3_3">Игра 3</span>
+            </a>
+        </div>
+    </section>
+    <section class="section_two center">
+        <div class="content">
+            <div class="content__description">
+                <h2 class="content__description_title">Времена года</h2>
+                <p class="content__description_text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+                <button onclick="getSeason();" class="content__description_button" type="button">Играть!</button>
+            </div>
+            <div>
+                <img class="contentv2__picture" src="./img/1games_bckgrnd (2).png" alt="первая игра">                  
+            </div>
+        </div>
+    </section>
+    <section class="section_three center">
+        <div class="contentv2">
+            <div>
+                <img class="contentv2__picture" src="./img/2games_bckgrnd (1).png" alt="вторая игра">                   
+            </div>
+             <div class="contentv2__description">
+                <h2 class="contentv2__description_title">Запомни слова</h2>
+                <p class="contentv2__description_text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+                <button onclick="getWords();" class="contentv2__description_button" type="button">Играть!</button>
+            </div>
+        </div>
+    </section>
+    <section class="section_four center">
+        <div class="puzzle">
+            <h2 class="puzzle__description_title">Игра в загадки</h2>
+            <p class="puzzle__description_text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+            <button class="puzzle__description_button" type="button">Играть!</button>
+        </div>
+    </section>
+    <footer class="footer center">
+        <p class="footer__text">Все права защищены</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

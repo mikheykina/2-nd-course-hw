@@ -1,0 +1,451 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top {
+  height: 1024px;
+  background-image: url(./img/bg_top.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.top__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  padding-top: 217px;
+}
+.top__content__title {
+  color: #FFF;
+  font-size: 64px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.top__content__text {
+  color: #FFF;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.top__content__button {
+  border-radius: 30px;
+  background: #9C0332;
+  color: #FFF;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 74px;
+  padding-right: 74px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.top__content__button:hover {
+  border-radius: 30px;
+  background: #EB443F;
+}
+
+.section_one {
+  background: #000915;
+}
+
+.game {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  display: flex;
+  gap: 32px;
+}
+.game__item {
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 379px;
+  height: 300px;
+  border-radius: 16px;
+  color: #FFF;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  align-items: flex-end;
+}
+.game__item_1 {
+  background-image: url(./img/game_1.png);
+}
+.game__item_1:hover {
+  border: 3px solid #44D2FF;
+  border-radius: 16px;
+}
+.game__item_1_1 {
+  padding-left: 32px;
+  padding-bottom: 32px;
+}
+.game__item_2 {
+  background-image: url(./img/game_2.png);
+}
+.game__item_2:hover {
+  border: 3px solid #44D2FF;
+  border-radius: 16px;
+}
+.game__item_2_2 {
+  padding-left: 32px;
+  padding-bottom: 32px;
+}
+.game__item_3 {
+  background-image: url(./img/game_3.png);
+}
+.game__item_3:hover {
+  border: 3px solid #44D2FF;
+  border-radius: 16px;
+}
+.game__item_3_3 {
+  padding-left: 32px;
+  padding-bottom: 32px;
+}
+
+.section_two {
+  background: #000915;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 130px;
+  padding-top: 234px;
+  padding-bottom: 234px;
+}
+.content__description {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 584px;
+}
+.content__description_title {
+  color: #FFF;
+  font-size: 48px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.content__description_text {
+  color: #FFF;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.content__description_button {
+  width: 234px;
+  border-radius: 30px;
+  background: #9C0332;
+  color: #FFF;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 74px;
+  padding-right: 74px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.content__description_button:hover {
+  border-radius: 30px;
+  background: #EB443F;
+}
+
+.section_three {
+  background: #000915;
+}
+
+.contentv2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 130px;
+  padding-top: 234px;
+  padding-bottom: 234px;
+}
+.contentv2__description {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 584px;
+}
+.contentv2__description_title {
+  color: #FFF;
+  font-size: 48px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.contentv2__description_text {
+  color: #FFF;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.contentv2__description_button {
+  width: 234px;
+  border-radius: 30px;
+  background: #9C0332;
+  color: #FFF;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 74px;
+  padding-right: 74px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.contentv2__description_button:hover {
+  border-radius: 30px;
+  background: #EB443F;
+}
+
+.section_four {
+  height: 800px;
+  background-image: url(./img/section_4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.puzzle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding-top: 276px;
+}
+.puzzle__description {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 584px;
+}
+.puzzle__description_title {
+  color: #FFF;
+  font-size: 48px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.puzzle__description_text {
+  color: #FFF;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: center;
+}
+.puzzle__description_button {
+  width: 234px;
+  border-radius: 30px;
+  background: #9C0332;
+  color: #FFF;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 74px;
+  padding-right: 74px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.puzzle__description_button:hover {
+  border-radius: 30px;
+  background: #EB443F;
+}
+
+.footer {
+  background: #000915;
+  height: 80px;
+}
+.footer__text {
+  color: #FFF;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+
+@media (max-width: 376px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    height: 735px;
+  }
+  .top__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+    padding-top: 239px;
+  }
+  .top__content__title {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .top__content__text {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .top__content__button {
+    color: #FFF;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 30px;
+    background: #9C0332;
+    width: 234px;
+    height: 48px;
+  }
+  .top__content__button:hover {
+    border-radius: 30px;
+    background: #EB443F;
+  }
+  .game {
+    flex-wrap: wrap;
+  }
+  .content {
+    padding-top: 51px;
+    padding-bottom: 85px;
+    gap: 64px;
+  }
+  .content__description {
+    align-items: center;
+  }
+  .content__description_title {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .content__description_text {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .content__picture svg {
+    width: 344px;
+    height: 236px;
+  }
+  .contentv2 {
+    padding-top: 51px;
+    padding-bottom: 85px;
+    gap: 64px;
+  }
+  .contentv2__description {
+    order: 0;
+    align-items: center;
+  }
+  .contentv2__description_title {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .contentv2__description_text {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .contentv2__picture {
+    order: 1;
+  }
+  .contentv2__picture svg {
+    width: 344px;
+    height: 236px;
+  }
+  .puzzle {
+    padding-top: 51px;
+    padding-bottom: 487px;
+  }
+  .puzzle__description_title {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .puzzle__description_text {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+  }
+}/*# sourceMappingURL=style.css.map */

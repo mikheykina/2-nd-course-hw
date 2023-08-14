@@ -1,0 +1,148 @@
+@media (max-width: 376px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        height: 735px;
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 33px;
+            padding-top: 239px;
+            &__title {
+                color: #FFF;
+                text-align: center;
+                font-size: 32px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            &__text {
+                color: #FFF;
+                text-align: center;
+                font-size: 14px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 22px;
+            }
+            &__button {
+                color: #FFF;
+                font-size: 18px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                border-radius: 30px;
+                background: #9C0332;
+                width: 234px;
+                height: 48px;
+                &:hover {
+                    border-radius: 30px;
+                    background: #EB443F;
+                }    
+            }
+        }
+    }
+
+    .game {
+        flex-wrap: wrap;
+    }
+
+    .content {
+        padding-top: 51px;
+        padding-bottom: 85px;
+        gap: 64px;
+        &__description {
+            align-items: center;
+            &_title {
+                color: #FFF;
+                text-align: center;
+                font-size: 32px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            &_text {
+                color: #FFF;
+                text-align: center;
+                font-size: 14px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 22px;
+            }
+        }
+        &__picture svg {
+            width: 344px;
+            height: 236px;
+            
+        }
+    }
+
+    .contentv2 {
+        padding-top: 51px;
+        padding-bottom: 85px;
+        gap: 64px;
+        &__description {
+            order: 0;
+            align-items: center;
+            &_title {
+                color: #FFF;
+                text-align: center;
+                font-size: 32px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            &_text {
+                color: #FFF;
+                text-align: center;
+                font-size: 14px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 22px;
+            }
+        }
+        &__picture {
+            order: 1;
+        }
+        &__picture {
+            width: 344px;
+            height: 236px;
+            
+        }
+    }
+
+    .puzzle {
+        padding-top: 51px;
+        padding-bottom: 487px;
+        &__description_title {
+            color: #FFF;
+            text-align: center;
+            font-size: 32px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        &__description_text {
+            color: #FFF;
+            text-align: center;
+            font-size: 14px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px;
+        }
+
+    }
+}
